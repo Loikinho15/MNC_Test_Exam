@@ -8,33 +8,36 @@ public class Main {
     public static void main(String[] args) {
         int[] dividers = new int[]{3,5,7,9};
         int startPoint = 100000000;
-        int numberFound = 0;
-        int currentNum = 0;
+        boolean numberFound = true;
 
         while (true){
             for (int element : dividers){
-                currentNum = startPoint % element;
-                if (currentNum == 0){
-                    numberFound++;
+                if (startPoint % element != 0){
+                    numberFound = false;
                     break;
                 }
                 else {
-                    startPoint++;
+                    numberFound = true;
                 }
             }
-            if (numberFound == 4){
+            if (numberFound){
                 break;
             }
+            startPoint++;
         }
         System.out.print(startPoint + "\n");
 
         String intToParse = Integer.toString(startPoint);
         int intLenght = intToParse.length();
-        ArrayList<Character> intArray= new ArrayList<Character>();
+        ArrayList<Character> intArray= new ArrayList<>();
 
         for (int i = 0; i < intLenght; i++){
             intArray.add(intToParse.charAt(i));
-            System.out.print(intToParse.charAt(i) + ", ");
+            if (i + 1 == intLenght){
+                System.out.print(intToParse.charAt(i));
+            } else{
+                System.out.print(intToParse.charAt(i) + ", ");
+            }
         }
 
         char charFound;
