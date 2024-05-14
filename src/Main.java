@@ -54,49 +54,8 @@ public class Main {
             }
         }*/
 
-
-        /* ***** Exercice de parcours de String et regex *****
-
-
-        String text = "The Dev Community is Amazing";
-
-        int textLenght = text.length();
-        ArrayList<String> textArray = new ArrayList<>();
-
-        int nbUpperCase = 0;
-        int nbLowerCase = 0;
-        for (int i = 0; i < textLenght; i++){
-            if (String.valueOf(text.charAt(i)).matches("[A-Z]")){
-                nbUpperCase++;
-            } else if (String.valueOf(text.charAt(i)).matches("[a-z]")){
-                nbLowerCase++;
-            }
-        }
-        System.out.print("upper : " + nbUpperCase  );
-        System.out.print("lower : " + nbLowerCase);*/
-
-
-
-        /*  ***** Exercice avec des nombres premiers *****
-
-        int number1 = 0;
-        int number2 = 0;
-        int even = 0;
-
-        Scanner myScan = new Scanner(System.in);
-        System.out.print("Enter a starting number");
-        number1 = myScan.nextInt();
-
-        System.out.print("Enter last number");
-        number2 = myScan.nextInt();
-
-        myScan.close();
-
-        for (int i = 0; i < number2; i++){
-            if ( i % 2 == 0){
-                even += 1;
-            }
-        }
-        System.out.print("Number of even numbers are : " + even);*/
+        //new StringMatcher().matcher();
+        new StringMatcher().matchPattern();
+        //new AskInput().askInput();
     }
 }
