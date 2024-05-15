@@ -8,10 +8,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         /*int[] dividers = new int[]{3,5,7,9};
@@ -91,12 +87,10 @@ public class Main {
         System.out.print("\n");
 
         String formatedNumber = String.valueOf(startPoint);
-        ArrayList<String> formatedNumberArrayList = new ArrayList<>();
         String[] formatedNumberArray = formatedNumber.split("(?<=.)");
         System.out.print("L = ");
 
         for (int i = 0; i < formatedNumberArray.length; i++){
-            formatedNumberArrayList.add(formatedNumberArray[i]);
             if (i + 1 != formatedNumberArray.length) {
                 System.out.print(formatedNumberArray[i] + ",");
             }
@@ -120,7 +114,7 @@ public class Main {
                     System.out.print("E" + formatedNumberArray[i]);
                     listOfNumToCheck.add(formatedNumberArray[i]);
                 } else {
-                    System.out.print("R" + formatedNumberArray[i] + ",");
+                    System.out.print("E" + formatedNumberArray[i] + ",");
                     listOfNumToCheck.add(formatedNumberArray[i]);
                 }
 
